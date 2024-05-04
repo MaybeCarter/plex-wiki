@@ -31,13 +31,13 @@ It will look like this:
 
 Click `I accept the invitation`.
 
-You'll be greeted with the "Account Sign in" page. If you already have a Plex account, just sign in. Otherwise, you can select one of the "Continue with..." options to use a single sign on, or you can press the dark grey `sign up with email` text under the `Sign In` button. 
+You'll be greeted with the "Account Sign in" page. If you already have a Plex account, just sign in. Otherwise, select one of the "Continue with..." options to use a single sign on, or  click the dark grey `sign up with email` text under the `Sign In` button. 
 
 > Make sure whatever method you use uses the same email that I sent the invite to. If you used `Continue with Apple` and chose to hide your email, I need the obfuscated email address (it'll be something like seniors_reprint_00@icloud.com or spender_pet.0o@icloud.com), not your actual iCloud email address. 
 
 ![signup.png](/images/signup.png)
 
-Once you've signed in, you'll be on the "Manage Library Access" page. You should see that you have access to two libraries shared by me (Movies and TV shows). 
+Once you've signed in, you'll be on the "Manage Library Access" page. You should see that you have access to two libraries shared by me (Movies and TV Shows). 
 
 ![library_access.png](/images/library_access.png)
 
