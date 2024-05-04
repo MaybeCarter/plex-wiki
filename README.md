@@ -106,13 +106,17 @@ I take pride in hosting an aesthetically pleasing and well-organized server. One
 ![collections.png](images/collections.png)
 
 ## FAQs
+- Thanks for letting me access your Plex server! Can I pay you for your generosity? 
+    > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. 
 - I requested a movie a while ago, but it's still not available on Plex. Why not? 
-    > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex.    
+    > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. 
+- Why don't you have any 4K or Remux content on your server? 
+    > Even if I had infinite storage space (which I don't), 4K and Remux files are such high bitrate that they're more hassle than they are worth, for both my server and your client. 
+- What resolution is the content on your server?
+    > For movies, the files are the highest quality available, up to 1080p. Since TV shows are so much longer than movies, I keep most of them at 720p to conserve storage space. 
+- Why are there more than 250 movies in the IMDb Top 250 Collection? 
+    > I have multiple versions of the Star Wars Original Trilogy, and they're all added to the collection when it's updated.    
 - What hardware is your Plex server running on? 
     > My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory. 
 - I keep seeing the word "Hyperdrive." What's that? 
     > I love Star Wars, and I love a naming convention. All of my Apple products are named after people, places, and things from the Star Wars universe. Hyperdrive is the name of the server that Plex is running on, so you might see that name from time to time. 
-- Thanks for letting me access your Plex server! Can I pay you for your generosity? 
-    > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. 
-- Why are there more than 250 movies in the IMDb Top 250 Collection? 
-    > I have multiple versions of the Star Wars Original Trilogy, and they're all added to the collection when it's updated. 
