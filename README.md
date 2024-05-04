@@ -31,7 +31,7 @@ It will look like this:
 
 Click `I accept the invitation`.
 
-You'll be greeted with the Account Sign in page. If you already have a Plex account, just sign in. Otherwise, you can select one of the "Continue with..." options to use a single sign on, or you can press the dark grey `sign up with email` text under the `Sign In` button. 
+You'll be greeted with the "Account Sign in" page. If you already have a Plex account, just sign in. Otherwise, you can select one of the "Continue with..." options to use a single sign on, or you can press the dark grey `sign up with email` text under the `Sign In` button. 
 
 > Make sure whatever method you use uses the same email that I sent the invite to. If you used `Continue with Apple` and chose to hide your email, I need the obfuscated email address (it'll be something like seniors_reprint_00@icloud.com or spender_pet.0o@icloud.com), not your actual iCloud email address. 
 
@@ -58,7 +58,7 @@ Now, click on the home button in the top left corner, and you'll see the "Plex W
 
 Once you've unchecked `Playlists`, `Live TV`, `Movies & Shows`, `Discover`, and `Music`, (and `Watchlist`, if you want) click `Finish Setup`. 
 
-You should be greeted by the Home screen: 
+You should be greeted by the Home page: 
 
 ![finally_home.png](/images/finally_home.png)
 
@@ -89,7 +89,7 @@ Now, anytime you want to watch anything that isn't yet on my server, just open u
 ## Notice an issue with content? 
 If you're watching something and you notice an issue with the content, let me know! (Not directly, it's not you, but I'll probably forget about it.) You have two options:
 
-1. **From  Plex:**  On the page for the episode or Movie that has an issue, click the three dot button and select `Report Issue...` from the dropdown.
+1. **From  Plex:**  On the page for the episode or movie that has an issue, click the three dot button and select `Report Issue...` from the dropdown.
 
     ![issue_plex_1](/images/issue_plex_1.png)
 
