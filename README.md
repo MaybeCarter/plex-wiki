@@ -100,6 +100,11 @@ My Plex server is not running on the most impressive hardware, so issues pop up 
 
 ![unavailable.png](/images/unavailable.png)
 
+## Other fun stuff
+I take pride in hosting an aesthetically pleasing and well-organized server. One of my favorite parts is the `Collections` tab within the `Movies` library. Not only are movies organized by franchise (like *Shrek* or *The Godfather*), there are also collections for studios, directors, Oscars, and IMDb Top 250 and Popular lists. If you don't know what you want to watch, the Collections tab is a great place to start. 
+
+![collections.png](images/collections.png)
+
 ## FAQs
 - I requested a movie a while ago, but it's still not available on Plex. Why not? 
     > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex.    
@@ -109,3 +114,5 @@ My Plex server is not running on the most impressive hardware, so issues pop up 
     > I love Star Wars, and I love a naming convention. All of my Apple products are named after people, places, and things from the Star Wars universe. Hyperdrive is the name of the server that Plex is running on, so you might see that name from time to time. 
 - Thanks for letting me access your Plex server! Can I pay you for your generosity? 
     > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. 
+- Why are there more than 250 movies in the IMDb Top 250 Collection? 
+    > I have multiple versions of the Star Wars Original Trilogy, and they're all added to the collection when it's updated. 
