@@ -7,13 +7,13 @@ Plex is a media server that I run on my own computer. Think of it as a streaming
 ![home.png](/images/home.png)
 
 ## Is it safe?
-Yes. Plex only serves media (video, photo, audio), there's nothing that could happen to you. My family, a few select friends, and I have been using Plex for more than a year now without any issues or harm. I'm assuming all of the risk. 
+Yes. Plex only serves media (in the case of my server, only video). There's nothing that could harm you. My family, a few select friends, and I have been using Plex for more than a year now without any issues. I'm assuming all of the risk. 
 
-## Why use this versus streaming services?
-Everything in one spot, for one. Also, I've found streaming services kind of suck depending on device your streaming on. Plex is consistent. Also, Plex has a shuffle button. Try it out, especially on shows you've seen more than once. It's a nice way to say "I want to watch an episode of this, but I don't care which one, or if they're in order". I use it with Family Guy and American Dad to fall asleep, and with Psych when I work from home. 
+## Why use this instead of other streaming services?
+My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control over the streaming services I was using. 
 
 ## I'm in
-Sweet. If you haven't yet given me your email address, please do so now so I can invite you. 
+Sweet. 
 
 # Getting Started
 > This assumes that you're on a computer. Steps may be different on mobile.
@@ -29,7 +29,7 @@ Click `I accept the invitation`.
 
 You'll be greeted with the "Account Sign in" page. If you already have a Plex account, just sign in. Otherwise, select one of the "Continue with..." options to use a single sign on, or  click the dark grey `sign up with email` text under the `Sign In` button. 
 
-> Make sure whatever method you use uses the same email that I sent the invite to. If you used `Continue with Apple` and chose to hide your email, I need the obfuscated email address (it'll be something like seniors_reprint_00@icloud.com or spender_pet.0o@icloud.com), not your actual iCloud email address. 
+> Make sure the method you sign in with uses the same email address that I sent the invite to. If you used `Continue with Apple` and chose to hide your email, I need the obfuscated email address (it'll be something like seniors_reprint_00@icloud.com or spender_pet.0o@icloud.com), not your actual iCloud email address. 
 
 ![signup.png](/images/signup.png)
 
@@ -37,9 +37,10 @@ Once you've signed in, you'll be on the "Manage Library Access" page. You should
 
 ![library_access.png](/images/library_access.png)
 
-Before we go to the Home page, let's make some settings adjustments:
-> These changes will only apply to Plex Web. Please make the same adjustments on each platform you intend to use Plex. 
-- Click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable "Play Theme Music", I think it's neat.
+Before we go to the Home page, let's make some quick settings adjustments:
+> These changes will only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
+
+- Click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's neat.
 - Next, click `Quality` in the side bar, here are my recommended settings: 
 
     ![recommended_settings.png](/images/settings.png)
@@ -62,7 +63,7 @@ You should be greeted by the Home page:
 Great! You made a Plex account and got all set up for an optimal streaming experience. 
 
 ## Download Apps
-Plex has apps for pretty much every device you'd ever want to stream media on. Unfortunately, on mobile devices you do have to make one-time in-app purchase of $5 to be able to stream media. If you're on desktop, download the desktop app [here for Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) or [here for Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app).
+Plex has apps for pretty much every device you'd ever want to stream media on. Unfortunately, on mobile devices you do have to make one-time in-app purchase of $5 to be able to stream media. If you're on desktop, download the  app [here for Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) or [here for Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app).
 
 Plex is also available on all major set-top boxes and smart TVs. 
 > If you have both a smart TV and set-top box, I _beg_ you to use the Plex app on the set-top box instead of the smart TV app. Actually, you should use _every_ app on the set-top box instead of the smart TV alternative. 
@@ -74,16 +75,16 @@ If there's something you want to watch that I don't yet have on my Plex server, 
 
 1. Go to [overseerr.cartersanderson.com](https://overseerr.cartersanderson.com). 
     > Steps 2 and 3 apply to mobile only, specifically iOS. Skip these steps on desktop. 
-2. Select the share icon (a square with an arrow coming out of it) and tap "Add to Home Screen." 
+2. Select the share icon (a square with an arrow coming out of it) and tap `Add to Home Screen`.
 3. Open the Overseerr app icon from your Home Screen. 
 4. Sign into your Plex account.
 5. When prompted, I would recommend allowing notifications so that you know when requested content is available on Plex. 
     > Getting the "Allow Notifications from Overseer?" prompt to show up on iOS can be a little tricky. The best method I've found is by going to `Settings`, `Notifications`, `Web Push`, and making sure all the options are enabled. Then tap `Save Changes` and go back to the Home page. 
 
-Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and tap "Request." It should be available in just a few minutes. 
+Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`. It should be available in just a few minutes. 
 
 ## Notice an issue with content? 
-If you're watching something and you notice an issue with the content, let me know! (Not directly, it's not you, but I'll probably forget about it.) You have two options:
+If you're watching something and you notice an issue with the content, let me know! (Not directly - it's not you, but I'll probably forget about it.) You have two options:
 
 1. **From  Plex:**  On the page for the episode or movie that has an issue, click the three dot button and select `Report Issue...` from the dropdown.
 
@@ -93,7 +94,7 @@ If you're watching something and you notice an issue with the content, let me kn
 
     ![issue_overseerr_1.png](/images/issue_overseerr_1.png)
 
-    >  The more detail you can provide, the better! Include timestamps, if the issue is with video, audio, subtitles, or something else, and any troubleshooting you've already completed.
+    >  The more detail you can provide in your Issue Report, the better! Include timestamps, if the issue is with video, audio, subtitles, or something else, and any troubleshooting you've already completed.
 
 ## Having a more serious problem? 
 My Plex server is not running on the most impressive hardware, so issues pop up from time to time. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or nonstop buffering), shoot me a text and I'll do my best to fix the issue. 
@@ -105,9 +106,11 @@ I take pride in hosting an aesthetically pleasing and well-organized server. One
 
 ![collections.png](images/collections.png)
 
+There is also a shuffle button! You can shuffle TV shows, collections, or if you're feeling brave, you can shuffle the entire library. 
+
 ## FAQs
 - Thanks for letting me access your Plex server! Can I pay you for your generosity? 
-    > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. 
+    > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. If you want to support Plex, you can [purchase Plex Pass](https://www.plex.tv/plex-pass/), which will get you features like Skip Intro/Credits and extra content like cast interviews and deleted scenes. 
 - I requested a movie a while ago, but it's still not available on Plex. Why not? 
     > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. 
 - Why don't you have any 4K or Remux content on your server? 
