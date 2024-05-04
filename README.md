@@ -105,7 +105,7 @@ My Plex server is not running on the most impressive hardware, so issues pop up 
 ![unavailable.png](/images/unavailable.png)
 
 ## FAQs
-- I requested a movie a while ago, but it's still not on Plex. Why not? 
+- I requested a movie a while ago, but it's still not available on Plex. Why not? 
     > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex.    
 - What hardware is your Plex server running on? 
     > My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory. 
