@@ -10,7 +10,7 @@ Plex is a media server that I run on my own computer. Think of it as a streaming
 Yes. Plex only serves media (in the case of my server, only video). There's nothing that could harm you. My family, a few select friends, and I have been using Plex for more than a year now without any issues. I'm assuming all of the risk. 
 
 ## Why use this instead of other streaming services?
-My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control over the streaming services I was using. 
+My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex due to complicated licensing battles like you to with Big Streaming. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control than the streaming services I was using. 
 
 ## I'm in
 Sweet. If I don't have it already, send me your email address so I can invite you.
