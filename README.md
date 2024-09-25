@@ -118,7 +118,7 @@ There is also a shuffle button! You can shuffle TV shows, collections, or if you
 - What resolution is the content on your server?
     > For movies, the files are the highest quality available, up to 1080p. Since TV shows are so much longer than movies, I keep most of them at 720p to conserve storage space. 
 - Why are there more than 250 movies in the IMDb Top 250 Collection? 
-    > I have multiple versions of the Star Wars and The Lord of the Rings trilogies, and each edition is counted as a separate movie within the collection.    
+    > I have multiple editions of the Star Wars and The Lord of the Rings trilogies, and each edition is counted as a separate movie within the collection.    
 - What hardware is your Plex server running on? 
     > My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory. 
 - I keep seeing the word "Hyperdrive." What's that? 
