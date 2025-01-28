@@ -2,7 +2,7 @@
 If you're reading this, it's because I've shared my Plex library with you. You might have some questions. *I recommend reading through this all first before going through the setup.*
 
 ## What is Plex?
-Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my living room. You have access to over 700 movies and over 3,000 TV episodes.
+Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my living room. You have access to over 1,000 movies and over 4,500 TV episodes.
 
 ![home.png](/images/home.png)
 
@@ -10,7 +10,7 @@ Plex is a media server that I run on my own computer. Think of it as a streaming
 Yes. Plex only serves media (in the case of my server, only video). There's nothing that could harm you. My family, a few select friends, and I have been using Plex for more than a year now without any issues. I'm assuming all of the risk. 
 
 ## Why use this instead of other streaming services?
-My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control over the streaming services I was using. 
+My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex due to complicated licensing battles like you to with Big Streaming. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control than the streaming services I was using. 
 
 ## I'm in
 Sweet. If I don't have it already, send me your email address so I can invite you.
@@ -118,8 +118,8 @@ There is also a shuffle button! You can shuffle TV shows, collections, or if you
 - What resolution is the content on your server?
     > For movies, the files are the highest quality available, up to 1080p. Since TV shows are so much longer than movies, I keep most of them at 720p to conserve storage space. 
 - Why are there more than 250 movies in the IMDb Top 250 Collection? 
-    > I have multiple versions of the Star Wars Original Trilogy, and they're all added to the collection when it's updated.    
+    > I have multiple editions of the _Star Wars_ and _The Lord of the Rings_ trilogies, and each edition is counted as a separate movie within the collection.    
 - What hardware is your Plex server running on? 
     > My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory. 
 - I keep seeing the word "Hyperdrive." What's that? 
-    > I love Star Wars, and I love a naming convention. All of my Apple products are named after people, places, and things from the Star Wars universe. Hyperdrive is the name of the server that Plex is running on, so you might see that name from time to time. 
+    > I love _Star Wars_, and I love a naming convention. All of my Apple products are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the server that Plex is running on, so you might see that name from time to time. 
