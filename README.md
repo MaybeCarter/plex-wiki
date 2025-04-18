@@ -2,7 +2,7 @@
 If you're reading this, it's because I've shared my Plex library with you. You might have some questions. *I recommend reading through this all first before going through the setup.*
 
 ## What is Plex?
-Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my living room. You have access to over 1,000 movies and over 4,500 TV episodes.
+Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my living room. You have access to over 1,500 movies and over 10,000 TV episodes.
 
 ![home.png](/images/home.png)
 
@@ -63,25 +63,25 @@ You should be greeted by the Home page:
 Great! You made a Plex account and got all set up for an optimal streaming experience. 
 
 ## Download Apps
-Plex has apps for pretty much every device you'd ever want to stream media on. Unfortunately, on mobile devices you do have to make one-time in-app purchase of $5 to be able to stream media. If you're on desktop, download the  app [here for Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) or [here for Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app).
+Plex has apps for pretty much every device you'd ever want to stream media on. If you're on desktop, download the  app [here for Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) or [here for Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app). If you're on mobile, tap [here for iOS](https://itunes.apple.com/us/app/plex/id383457673?mt=8) or [here for Android](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en). Plex used to require a one-time in-app purchase of $5 to stream on mobile. However, as of April 2025, that option has been removed in favor of a new Remote Watch Pass subscription. Not to worry, since I own a Plex Pass, it is free for all Hyperdrive users to stream remotely on any device. You should **never** be asked to pay to stream on Plex.
 
 Plex is also available on all major set-top boxes and smart TVs. 
-> If you have both a smart TV and set-top box, I _beg_ you to use the Plex app on the set-top box instead of the smart TV app. Actually, you should use _every_ app on the set-top box instead of the smart TV alternative. 
+> If you have both a smart TV and a set-top box (like an Apple TV, Roku, or Nvidia Shield), I _beg_ you to use the Plex app on the set-top box instead of the smart TV app. Smart TV apps are extremely resource-constrained and provide a significantly inferior experience to their set-top box counterparts.
 
 _Settings wiki page coming soon_
 
 ## Can't Find What You Want? 
-If there's something you want to watch that I don't yet have on my Plex server, you can request it yourself. Requested content is usually available within a few minutes. Let's get set up with Overseerr, my automated request management platform:
+If there's something you want to watch that isn't yet on Hyperdrive, you can request it yourself. Media is usually available within a few minutes of the request submission. Let's get set up with Overseerr, my automated request management platform:
 
 1. Go to [overseerr.cartersanderson.com](https://overseerr.cartersanderson.com). 
     > Steps 2 and 3 apply to mobile only, specifically iOS. Skip these steps on desktop. 
 2. Select the share icon (a square with an arrow coming out of it) and tap `Add to Home Screen`.
 3. Open the Overseerr app icon from your Home Screen. 
 4. Sign into your Plex account.
-5. When prompted, I would recommend allowing notifications so that you know when requested content is available on Plex. 
-    > Getting the "Allow Notifications from Overseer?" prompt to show up on iOS can be a little tricky. The best method I've found is by going to `Settings`, `Notifications`, `Web Push`, and making sure all the options are enabled. Then tap `Save Changes` and go back to the Home page. 
+5. **(Optional)** Enable push notifications to receive an alert when requested media is available.
+    > Go to `Settings` > `Notifications` > `Web Push`, and making sure all the options are enabled. Then tap `Enable web push` and then `Save Changes`. 
 
-Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`. It should be available in just a few minutes. 
+Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`. 
 
 ## Notice an issue with content? 
 If you're watching something and you notice an issue with the content, let me know! (Not directly - it's not you, but I'll probably forget about it.) You have two options:
@@ -111,6 +111,8 @@ Plex also has a shuffle button! You can shuffle TV shows, collections, or if you
 ## FAQs
 - Thanks for letting me access your Plex server! Can I pay you for your generosity? 
     > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. If you want to support Plex, you can [purchase Plex Pass](https://www.plex.tv/plex-pass/), which will get you features like Skip Intro/Credits and extra content like cast interviews and deleted scenes. 
+- I keep seeing the word "Hyperdrive." What's that? 
+    > I love _Star Wars_, and I love a naming convention. All of my devices  are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the Mac mini that Plex is running on, so you might see that name from time to time.
 - I requested a movie a while ago, but it's still not available on Plex. Why not? 
     > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. Additionally, though I'll always try my best, I might not be able to source obscure or especially old media. 
 - Why don't you have any 4K or Remux content on your server? 
@@ -119,9 +121,7 @@ Plex also has a shuffle button! You can shuffle TV shows, collections, or if you
     > For movies, the files are the highest quality available, up to 1080p. Since TV shows are so much longer than movies, I keep most of them at 720p to conserve storage space. 
 - Why are there more than 250 movies in the IMDb Top 250 Collection? 
     > I have multiple editions of the _Star Wars_ and _The Lord of the Rings_ trilogies, and each edition is counted as a separate movie within the collection.    
-- What hardware is your Plex server running on? 
+- What hardware is your Hyperdrive running on? 
     > ~~My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory.~~
     
     > Since January 2025, my Plex Server is running on an M4 Mac mini with 16GB Unified Memory. The media lives on a series of 20TB hard drives housed in an OWC Mercury Elite Pro Quad enclosure.
-- I keep seeing the word "Hyperdrive." What's that? 
-    > I love _Star Wars_, and I love a naming convention. All of my devices  are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the Mac mini that Plex is running on, so you might see that name from time to time. 
