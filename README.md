@@ -10,7 +10,7 @@ Plex is a media server that I run on my own computer. Think of it as a streaming
 Yes. Plex only serves media (in the case of my server, only video). There's nothing that could harm you. My family, a few select friends, and I have been using Plex for more than a year now without any issues. I'm assuming all of the risk. 
 
 ## Why use this instead of other streaming services?
-My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex due to complicated licensing battles like you to with Big Streaming. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control than the streaming services I was using. 
+My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex due to complicated licensing battles like you do with Big Streaming. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control than the streaming services I was using. 
 
 ## I'm in
 Sweet. If I don't have it already, send me your email address so I can invite you.
@@ -40,14 +40,14 @@ Once you've signed in, you'll be on the "Manage Library Access" page. You should
 Before we go to the Home page, let's make some quick settings adjustments:
 > These changes will only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
 
-- Click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's neat.
-- Next, click `Quality` in the side bar, here are my recommended settings: 
+- Click `Quality` in the side bar, here are my recommended settings: 
 
     ![recommended_settings.png](/images/settings.png)
 
     > You may find that you want to enable `Automatically adjust quality (Beta)` if you have issues streaming.
 
-- Finally, click `Player` in the sidebar, `Show Advanced`, and disable `Normalize Multi-channel Audio`.
+- Next, click `Player` in the sidebar, `Show Advanced`, and disable `Normalize Multi-channel Audio`.
+- Finally, click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's neat.
 
 Now, click on the home button in the top left corner, and you'll see the "Plex Web Setup" page, with a list of pinned sources. Uncheck everything except `Movies` and `TV Shows`. It's up to you if you want to keep `Watchlist` pinned or not. The other items are not shared by me, and will only make your Plex experience more confusing. 
 
@@ -86,33 +86,33 @@ Now, anytime you want to watch anything that isn't yet on my server, just open u
 ## Notice an issue with content? 
 If you're watching something and you notice an issue with the content, let me know! (Not directly - it's not you, but I'll probably forget about it.) You have two options:
 
-1. **From  Plex:**  On the page for the episode or movie that has an issue, click the three dot button and select `Report Issue...` from the dropdown.
+1. **Within  Plex (Preferred):**  On the page for the episode or movie that has an issue, click the three dot button and select `Report Issue...` from the dropdown.
 
     ![issue_plex_1](/images/issue_plex_1.png)
 
-2. **From Overseer:** Find the item on [Overseerr](https://overseerr.cartersanderson.com) and click on the yellow `Report an Issue` button on the right side.
+2. **Within Overseer:** Find the item on [Overseerr](https://overseerr.cartersanderson.com) and click on the yellow `Report an Issue` button on the right side.
 
     ![issue_overseerr_1.png](/images/issue_overseerr_1.png)
 
     >  The more detail you can provide in your Issue Report, the better! Include timestamps, if the issue is with video, audio, subtitles, or something else, and any troubleshooting you've already completed.
 
 ## Having a more serious problem? 
-My Plex server is not running on the most impressive hardware, so issues pop up from time to time. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or nonstop buffering), shoot me a text and I'll do my best to fix the issue. 
+I've put a lot of effort into making the experience as polished and automated as possible. However, problems may pop up from time to time. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or a 404 error on Overseerr), shoot me a text and I'll do my best to fix the issue. 
 
 ![unavailable.png](/images/unavailable.png)
 
 ## Other fun stuff
-I take pride in hosting an aesthetically pleasing and well-organized server. One of my favorite parts is the `Collections` tab within the `Movies` library. Not only are movies organized by franchise (like *Shrek* or *The Godfather*), there are also collections for studios, directors, Oscars, and IMDb Top 250 and Popular lists. If you don't know what you want to watch, the Collections tab is a great place to start. 
+I take pride in hosting an aesthetically pleasing and well-organized server. One of my favorite parts is the `Collections` tab within the `Movies` library. Not only are movies organized by franchise (like *Shrek* or *The Godfather*), there are also collections for studios, directors, Oscars, and IMDb lists, and more. If you don't know what you want to watch, the Collections tab is a great place to start. 
 
 ![collections.png](images/collections.png)
 
-There is also a shuffle button! You can shuffle TV shows, collections, or if you're feeling brave, you can shuffle the entire library. 
+Plex also has a shuffle button! You can shuffle TV shows, collections, or if you're feeling brave, you can even shuffle the entire library. 
 
 ## FAQs
 - Thanks for letting me access your Plex server! Can I pay you for your generosity? 
     > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. If you want to support Plex, you can [purchase Plex Pass](https://www.plex.tv/plex-pass/), which will get you features like Skip Intro/Credits and extra content like cast interviews and deleted scenes. 
 - I requested a movie a while ago, but it's still not available on Plex. Why not? 
-    > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. 
+    > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. Additionally, though I'll always try my best, I might not be able to source obscure or especially old media. 
 - Why don't you have any 4K or Remux content on your server? 
     > Even if I had infinite storage space (which I don't), 4K and Remux files are such high bitrate that they're more hassle than they are worth, for both my server and your client. 
 - What resolution is the content on your server?
@@ -120,6 +120,8 @@ There is also a shuffle button! You can shuffle TV shows, collections, or if you
 - Why are there more than 250 movies in the IMDb Top 250 Collection? 
     > I have multiple editions of the _Star Wars_ and _The Lord of the Rings_ trilogies, and each edition is counted as a separate movie within the collection.    
 - What hardware is your Plex server running on? 
-    > My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory. 
+    > ~~My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory.~~
+    
+    > Since January 2025, my Plex Server is running on an M4 Mac mini with 16GB Unified Memory. The media lives on a series of 20TB hard drives housed in an OWC Mercury Elite Pro Quad enclosure.
 - I keep seeing the word "Hyperdrive." What's that? 
-    > I love _Star Wars_, and I love a naming convention. All of my Apple products are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the server that Plex is running on, so you might see that name from time to time. 
+    > I love _Star Wars_, and I love a naming convention. All of my devices  are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the Mac mini that Plex is running on, so you might see that name from time to time. 
