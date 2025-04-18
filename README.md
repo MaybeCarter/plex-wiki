@@ -71,19 +71,24 @@ Plex is also available on all major set-top boxes and smart TVs.
 _Settings wiki page coming soon_
 
 ## Can't Find What You Want? 
-If there's something you want to watch that isn't yet on Hyperdrive, you can request it yourself. Media is usually available within a few minutes of the request submission. Let's get set up with Overseerr, my automated request management platform:
+If there's something you want to watch that isn't yet on Hyperdrive, you can request it yourself. Let's get set up with Overseerr, my automated request management platform:
 
 1. Go to [overseerr.cartersanderson.com](https://overseerr.cartersanderson.com). 
-    > Steps 2 and 3 apply to mobile only, specifically iOS. Skip these steps on desktop. 
-2. Select the share icon (a square with an arrow coming out of it) and tap `Add to Home Screen`.
-3. Open the Overseerr app icon from your Home Screen. 
-4. Sign into your Plex account.
-5. **(Optional)** Enable push notifications to receive an alert when requested media is available.
+2. Sign in with your Plex account.
+3. Search for the movie or TV show you want and select `Request`.
+4. That's it! Media is usually available within minutes of request submission.
+
+Unfortunately, Overseerr does not offer a native application. Luckily, it _is_ a PWA (**P**rogressive **W**eb **A**pp), which means it will behave just like an app if you add it to your Home Screen. From [overseerr.cartersanderson.com](https://overseerr.cartersanderson.com):
+
+1. Select the share icon (a square with an arrow coming out of it) and tap `Add to Home Screen`.
+2. Open the Overseerr app icon from your Home Screen. 
+3. Sign into your Plex account.
+4. **(Optional)** Enable push notifications to receive an alert when requested media is available.
     > Go to `Settings` > `Notifications` > `Web Push`, and making sure all the options are enabled. Then tap `Enable web push` and then `Save Changes`. 
 
 ![overseerr_homescreen.png](/images/overseerr_homescreen.png)
 
-Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`. 
+Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`! It's that easy.
 
 ## Notice an issue with content? 
 If you're watching something and you notice an issue with the content, let me know! (Not directly - it's not you, but I'll probably forget about it.) You have two options:
