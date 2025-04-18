@@ -81,6 +81,8 @@ If there's something you want to watch that isn't yet on Hyperdrive, you can req
 5. **(Optional)** Enable push notifications to receive an alert when requested media is available.
     > Go to `Settings` > `Notifications` > `Web Push`, and making sure all the options are enabled. Then tap `Enable web push` and then `Save Changes`. 
 
+![overseerr_homescreen.png](/images/overseerr_homescreen.png)
+
 Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`. 
 
 ## Notice an issue with content? 
