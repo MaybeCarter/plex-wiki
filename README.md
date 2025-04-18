@@ -116,9 +116,9 @@ Plex also has a shuffle button! You can shuffle TV shows, collections, or if you
 
 ## FAQs
 - Thanks for letting me access your Plex server! Can I pay you for your generosity? 
-    > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. If you want to support Plex, you can [purchase Plex Pass](https://www.plex.tv/plex-pass/), which will get you features like Skip Intro/Credits and extra content like cast interviews and deleted scenes. 
+    > **No.** Please don't. Selling access to a Plex server is strictly against Plex's terms of service and could get my whole server shut down. Don't be the person to ruin it for everyone. If you want to support Plex, you can [purchase Plex Pass](https://www.plex.tv/plex-pass/), which will get you features like Skip Intro/Credits, download to mobile, and extra content like cast interviews and deleted scenes. 
 - I keep seeing the word "Hyperdrive." What's that? 
-    > I love _Star Wars_, and I love a naming convention. All of my devices  are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the Mac mini that Plex is running on, so you might see that name from time to time.
+    > I love _Star Wars_, and I love a naming convention. All of my devices  are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the Mac mini running Plex Server, so you might see that name from time to time.
 - I requested a movie a while ago, but it's still not available on Plex. Why not? 
     > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. Additionally, though I'll always try my best, I might not be able to source obscure or especially old media. 
 - Why don't you have any 4K or Remux content on your server? 
@@ -130,4 +130,4 @@ Plex also has a shuffle button! You can shuffle TV shows, collections, or if you
 - What hardware is your Hyperdrive running on? 
     > ~~My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory.~~
     
-    > Since January 2025, my Plex Server is running on an M4 Mac mini with 16GB Unified Memory. The media lives on a series of 20TB hard drives housed in an OWC Mercury Elite Pro Quad enclosure.
+    > Since January 2025, my Plex Server is running on an M4 Mac mini with 16GB Unified Memory. The media is stored on a series of 20TB hard drives housed in an OWC Mercury Elite Pro Quad enclosure.
