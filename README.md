@@ -44,7 +44,7 @@ Before we go to the Home page, let's make some quick settings adjustments:
 
     ![recommended_settings.png](/images/settings.png)
    
-    > At the very least, set video quality to `Maximum`. This is for my benefit and yours; Hyperdrive won't spend unnecessary resources transcoding media to a lower resolution or bitrate, and you receive the full-quality media. However, you may find it useful to enable `Automatically adjust quality (Beta)` if you have limited bandwidth and face issues streaming.
+    > At the very least, set video quality to `Maximum`. This is for my benefit and yours; Hyperdrive won't spend unnecessary resources transcoding media to a lower resolution or bitrate, and you receive the full-quality media. However, you may find it useful to enable `Automatically adjust quality (Beta)` if you have limited bandwidth or encounter buffering while streaming.
 - Next, click `Player` in the sidebar, `Show Advanced`, and disable `Normalize Multi-channel Audio`.
 - Finally, click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's neat.
 
