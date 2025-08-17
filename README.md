@@ -33,7 +33,7 @@ If you’re ready to join, just share your email address with me. I’ll send yo
 # Getting Started
 > These instructions assume you’re on a computer. The steps may look different on mobile.
 
-1. Accept the invite
+1. **Accept the invite**
 
     Check your email for a message from noreply@plex.tv with the subject line “You’ve been invited to share some media in Plex.” It looks like this:
 
@@ -41,7 +41,7 @@ If you’re ready to join, just share your email address with me. I’ll send yo
 
     Click `I accept the invitation`.
 
-2. Sign in or create an account
+2. **Sign in or create an account**
     
     You’ll be taken to the Plex sign-in page. 
     - If you already have a Plex account, just sign in.
@@ -51,13 +51,13 @@ If you’re ready to join, just share your email address with me. I’ll send yo
 
     ![signup.png](/images/signup.png)
 
-3. Confirm library access
+3. **Confirm library access**
 
     After signing in, you’ll land on the **Manage Library Access** page. You should see two libraries shared with you: Movies and TV Shows. 
 
     ![library_access.png](/images/library_access.png)
 
-4. Adjust Plex settings
+4. **Adjust Plex settings**
 
     Plex offers its own ad-supported content, but to avoid confusion, I recommend disabling all of it.
 	- In the sidebar, click `Online Media Sources` and disable every option.
@@ -66,16 +66,15 @@ If you’re ready to join, just share your email address with me. I’ll send yo
 
     The following changes only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
 
-    - Click `Quality` in the side bar, here are my recommended settings: 
+    - Click `Quality` in the sidebar. Set video quality to `Maximum`. This prevents unnecessary transcoding on my end and gives you full-quality playback. 
 
     ![recommended_settings.png](/images/settings.png)
    
-    - Click `Quality` in the sidebar. Set video quality to `Maximum`. This prevents unnecessary transcoding on my end and gives you full-quality playback.
     > If you have limited bandwidth or frequent buffering, you can enable Automatically adjust quality (Beta).
     - Click `Player` in the sidebar, `Show Advanced`, and disable `Normalize Multi-channel Audio`.
     - Finally, click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's kinda fun.
 
-5. Finish Setup
+5. **Finish Setup**
 
     Now, click on the home button in the top left corner, and you'll see the **Plex Web Setup** page, with a list of pinned sources. If you successfully disabled the online media sources, you shouldn't see many options. If you see `Live TV`, `Movies & Shows`, or `Discover`, make sure they're unchecked.
 
@@ -94,6 +93,8 @@ Plex has apps for just about every device you might want to watch on:
 - **Desktop:** [Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) · [Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app)
 - **Mobile:** [iOS](https://itunes.apple.com/us/app/plex/id383457673?mt=8) · [Android](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en)
 - **Set-top boxes and smart TVs:** Apple TV, Roku, Fire TV, Nvidia Shield, and most modern smart TVs.
+
+    > If you own both a smart TV and a set-top box (Apple TV, Roku, Nvidia Shield, etc.), always use the set-top box Plex app. They’re far more reliable and performant than most built-in smart TV apps.
 
 ## Remote Streaming
 Plex used to require a one-time $5 unlock to stream remotely on mobile devices. [As of April 2025](https://www.plex.tv/blog/important-2025-plex-updates), Plex requires a subscription for *any* streaming outside the server's local network. Normally, that would mean either a Plex Pass or a Remote Watch Pass.
@@ -157,6 +158,6 @@ Plex also has a shuffle button! You can shuffle TV shows, collections, or if you
 4. What resolution is the content?
     > Movies: highest available quality, up to 1080p. TV shows: usually 720p to conserve space. 
 5. Why are there more than 250 movies in the IMDb Top 250 Collection? 
-    > I have multiple editions of the _Star Wars_ and _The Lord of the Rings_ trilogies, and each edition is counted as a separate movie within the collection.    
+    > Because I have multiple editions of some series (like *Star Wars* and *LOTR*), each edition counts separately in the collection.    
 6. What hardware is your Hyperdrive running on? 
     > Hyperdrive is an M4 Mac mini with 16 GB Unified Memory, and media is stored on 20 TB hard drives in an OWC Mercury Elite Pro Quad enclosure.
