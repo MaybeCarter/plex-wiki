@@ -1,138 +1,162 @@
 # Welcome	
-If you're reading this, it's because I've shared access to my Plex server with you. You might have some questions. *I recommend reading through this all first before going through the setup.*
+You're here because I've shared access to **Hyperdrive**, my Plex server. Read through this page before starting setup so things go smoothly.
 
 ## What is Plex?
-Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my home. You have access to over 1,500 movies and over 10,000 TV episodes.
+Plex is two things:
+- **Server software** that organizes and streams a personal media library.
+- **Client apps** (web, mobile, smart TV, set-top box) that let you play it.
 
-> Before moving on, I'd like to clarify some terminology:<br/>
-> When I say "**Plex**," I'm talking about the company and the official apps they provide.
-> When I say "**Hyperdrive**," I mean *my* Plex server: the library of movies and TV shows running on my computer that you’re connecting to through Plex.
+I run the server software on a computer in my home. That’s **Hyperdrive**, a library of 1,800+ movies and 13,000+ TV episodes that you connect to through Plex’s apps. 
+
+> - Plex = the company and its apps
+> - Hyperdrive = my Plex server (the actual library you're accessing)
 
 ![home.png](/images/home.png)
 
 ## Is it safe?
-Yes. Plex only serves media (in the case of my server, only video). There's nothing that could harm you. My family, a few select friends, and I have been using Plex for more than a year now without any issues. I'm assuming all of the risk. 
+Yes. Plex is designed for personal use, and it only does one thing: stream media. The apps you install come directly from Plex, the company, and work the same way as Netflix or Disney+: they request video, and the server streams it back.
+
+When you stream from Hyperdrive, you’re not opening your device up to me or to strangers. You’re just telling the Plex app to stream video from my server instead of from a corporate data center.
+
+On my end, I take care of running the server and handling the risks. On your end, it’s no different than using any other streaming app. 
 
 ## Why use this instead of other streaming services?
-My favorite thing about Plex is that everything I'm watching is in one place. It cannot be overstated how convenient it is to never have to look up what streaming service, if any, a particular movie or show is on. You also never have to worry about content leaving Plex due to complicated licensing battles like you do with Big Streaming. And while you get to have access to my Plex server, it's really a personal hobby project that started because I wanted more control than the streaming services I was using. 
+Streaming services are convenient, but each one only offers part of the picture. Some carry a handful of seasons, others rotate titles in and out, and many keep splitting content across new subscription tiers.
+
+With Hyperdrive, everything is in one place. There’s no guessing which service has what, or whether a movie quietly disappeared last week. The library stays stable, searchable, and ready when you are.
+
+And unlike commercial platforms, Hyperdrive doesn’t push recommendations or hide titles behind algorithms. The experience is consistent: open Plex, find what you want, press play.
 
 ## I'm in
-Sweet. If I don't have it already, send me your email address so I can invite you.
+If you’re ready to join, just share your email address with me. I’ll send you an invite to Hyperdrive, and then you can follow the steps in the next section to get started.
 
 # Getting Started
-> This assumes that you're on a computer. Steps may be different on mobile.
+> These instructions assume you’re on a computer. The steps may look different on mobile.
 
-Check your email. You should have received an email from noreply@plex.tv with the subject "You've been invited to share some media in Plex."
-*Don't worry, you're not sharing media with me, and the only way that could happen is if you download and setup a server. You'd know.*
+1. Accept the invite
 
-It will look like this: 
+    Check your email for a message from noreply@plex.tv with the subject line “You’ve been invited to share some media in Plex.” It looks like this:
 
-![share_email.png](/images/share_email.png)
+    ![share_email.png](/images/share_email.png)
 
-Click `I accept the invitation`.
+    Click `I accept the invitation`.
 
-You'll be greeted with the "Account Sign in" page. If you already have a Plex account, just sign in. Otherwise, select one of the "Continue with..." options to use a single sign on, or  click the dark grey `sign up with email` text under the `Sign In` button. 
+2. Sign in or create an account
+    
+    You’ll be taken to the Plex sign-in page. 
+    - If you already have a Plex account, just sign in.
+	- If you’re new, you can use Google or Apple single sign-on, or click `sign up with email`.
 
-> Make sure the method you sign in with uses the same email address that I sent the invite to. If you used `Continue with Apple` and chose to hide your email, I need the obfuscated email address (it'll be something like seniors_reprint_00@icloud.com or spender_pet.0o@icloud.com), not your actual iCloud email address. 
+    > **Important:** Use the same email address I invited. If you choose `Continue with Apple` and hide your email, let me know the randomized iCloud relay address so I can invite the correct email address.
 
-![signup.png](/images/signup.png)
+    ![signup.png](/images/signup.png)
 
-Once you've signed in, you'll be on the "Manage Library Access" page. You should see that you have access to two libraries shared by me (Movies and TV Shows). 
+3. Confirm library access
 
-![library_access.png](/images/library_access.png)
+    After signing in, you’ll land on the **Manage Library Access** page. You should see two libraries shared with you: Movies and TV Shows. 
 
-Before we go to the Home page, let's make some quick settings adjustments:
+    ![library_access.png](/images/library_access.png)
 
-In addition to being a media server, Plex offers ad-supported movies and TV, as well as rentals. In order to minimize confusion, the first thing we should do is turn off *all* of Plex's media offerings by clicking `Online Media Sources` in the sidebar and disabling everything in the list.
+4. Adjust Plex settings
 
-![online_disabled.png](/images/online_disabled.png)
+    Plex offers its own ad-supported content, but to avoid confusion, I recommend disabling all of it.
+	- In the sidebar, click `Online Media Sources` and disable every option.
 
-The following changes only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
+    ![online_disabled.png](/images/online_disabled.png)
 
-- Click `Quality` in the side bar, here are my recommended settings: 
+    The following changes only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
+
+    - Click `Quality` in the side bar, here are my recommended settings: 
 
     ![recommended_settings.png](/images/settings.png)
    
-    > At the very least, set video quality to `Maximum`. This is for my benefit and yours; Hyperdrive won't spend unnecessary resources transcoding media to a lower resolution or bitrate, and you receive the full-quality media. However, you may find it useful to enable `Automatically adjust quality (Beta)` if you have limited bandwidth or encounter buffering while streaming.
-- Next, click `Player` in the sidebar, `Show Advanced`, and disable `Normalize Multi-channel Audio`.
-- Finally, click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's neat.
+    - Click `Quality` in the sidebar. Set video quality to `Maximum`. This prevents unnecessary transcoding on my end and gives you full-quality playback.
+    > If you have limited bandwidth or frequent buffering, you can enable Automatically adjust quality (Beta).
+    - Click `Player` in the sidebar, `Show Advanced`, and disable `Normalize Multi-channel Audio`.
+    - Finally, click  `General` under "Plex Web" on the left-hand sidebar. Feel free to enable `Play Theme Music`, I think it's kinda fun.
 
-Now, click on the home button in the top left corner, and you'll see the "Plex Web Setup" page, with a list of pinned sources. If you successfully disabled the online media sources, you shouldn't see many options. If you see `Live TV`, `Movies & Shows`, or `Discover`, make sure they're unchecked.
+5. Finish Setup
 
-![unpin.png](/images/unpin_setup.png)
+    Now, click on the home button in the top left corner, and you'll see the **Plex Web Setup** page, with a list of pinned sources. If you successfully disabled the online media sources, you shouldn't see many options. If you see `Live TV`, `Movies & Shows`, or `Discover`, make sure they're unchecked.
 
-Finally, click `Finish Setup`. You should be greeted by the Home page: 
+    ![unpin.png](/images/unpin_setup.png)
 
-![finally_home.png](/images/finally_home.png)
+    Finally, click `Finish Setup`. You should be greeted by the Home page: 
+
+    ![finally_home.png](/images/finally_home.png)
 
 # Next Steps
-Great! You made a Plex account and got all set up for an optimal streaming experience. 
+You now have a Plex account connected to Hyperdrive with the right settings in place. You’re ready to start streaming. 
 
 ## Download Apps
-Plex has apps for pretty much every device you'd ever want to stream media on. If you're on desktop, download the  app [here for Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) or [here for Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app). If you're on mobile, tap [here for iOS](https://itunes.apple.com/us/app/plex/id383457673?mt=8) or [here for Android](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en). As of April 2025, Plex requires a Remote Watch Pass subscription to stream media outside of the server's local network. However, since I own a Plex Pass, it is free for all Hyperdrive users to stream remotely on any device. You should **never** be asked to pay to stream on Plex.
 
-Plex is also available on all major set-top boxes and smart TVs. 
-> If you have both a smart TV and a set-top box (like an Apple TV, Roku, or Nvidia Shield), I _beg_ you to use the Plex app on the set-top box instead of the smart TV app. Smart TV apps are extremely resource-constrained and provide a significantly inferior experience to their set-top box counterparts.
+Plex has apps for just about every device you might want to watch on:
+- **Desktop:** [Mac](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=macos#plex-app) · [Windows](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=win#plex-app)
+- **Mobile:** [iOS](https://itunes.apple.com/us/app/plex/id383457673?mt=8) · [Android](https://play.google.com/store/apps/details?id=com.plexapp.android&hl=en)
+- **Set-top boxes and smart TVs:** Apple TV, Roku, Fire TV, Nvidia Shield, and most modern smart TVs.
 
-## Can't Find What You Want? 
+## Remote Streaming
+Plex used to require a one-time $5 unlock to stream remotely on mobile devices. [As of April 2025](https://www.plex.tv/blog/important-2025-plex-updates), Plex requires a subscription for *any* streaming outside the server's local network. Normally, that would mean either a Plex Pass or a Remote Watch Pass.
+
+Because I already have a Plex Pass, you don’t need to worry about subscriptions — **all Hyperdrive users can stream remotely at no cost**. You should never be asked to pay Plex to watch from my server.
+
+## Request Something New
 If there's something you want to watch that isn't yet on Hyperdrive, you can request it yourself. Let's get set up with Jellyseerr, my automated request management platform:
 
-1. Go to [jellyseerr.cartersanderson.com](https://jellyseerr.cartersanderson.com). 
+1. Visit [jellyseerr.cartersanderson.com](https://jellyseerr.cartersanderson.com) in your browser.
 2. Sign in with your Plex account.
 3. Search for the movie or TV show you want and select `Request`.
-4. That's it! Media is usually available within minutes of request submission.
+4. That's it! Media is usually available shortly after submission.
 
 Unfortunately, Jellyseerr does not offer a native application. Luckily, it _is_ a PWA (**P**rogressive **W**eb **A**pp), which means it will behave just like an app if you add it to your Home Screen. From [jellyseerr.cartersanderson.com](https://jellyseerr.cartersanderson.com):
 
 1. Select the share icon (a square with an arrow coming out of it) and tap `Add to Home Screen`.
 2. Open the Jellyseerr app icon from your Home Screen. 
 3. Sign into your Plex account.
-4. **(Optional)** Enable push notifications to receive an alert when requested media is available.
+4. **(Optional)** Enable push notifications to get an alert as soon as your requested media is available.
 > Go to `Settings` > `Notifications` > `Web Push`, and make sure all the options are enabled. Then tap `Enable web push` and then `Save Changes`. 
 
 ![jellyseerr_homescreen.png](/images/jellyseerr_homescreen.png)
 
-Now, anytime you want to watch anything that isn't yet on my server, just open up Jellyseerr, search for the content you want and select `Request`! It's that easy.
+From then on, anytime you want something new, just open Jellyseerr, search, and tap `Request`. That’s it.
 
 ## Notice an issue with content? 
-If you're watching something and you notice an issue with the content, let me know! (Not directly - it's not you, but I'll probably forget about it.) You have two options:
+If you notice a problem while watching something (video, audio, or subtitles), let me know so I can fix it. You have two easy options:
 
-1. **Within  Plex (Preferred):**  On the page for the episode or movie that has an issue, click the three dot button and select `Report Issue...` from the dropdown.
+1. **In  Plex:**  On the episode or movie page, open the three-dot menu and select `Report Issue...`
 
     ![issue_plex_1](/images/issue_plex_1.png)
 
-2. **Within Jellyseerr:** Find the item on [Jellyseerr](https://jellyseerr.cartersanderson.com) and click on the yellow `Report an Issue` button on the right side.
+2. **In Jellyseerr:** Open [Jellyseerr](https://jellyseerr.cartersanderson.com) and click on the yellow `Report an Issue` button on the right side.
 
     ![issue_overseerr_1.png](/images/issue_overseerr_1.png)
 
-    >  The more detail you can provide in your Issue Report, the better! Include timestamps, if the issue is with video, audio, subtitles, or something else, and any troubleshooting you've already completed.
+    > The more detail you include, the faster I can fix it. Note timestamps, whether the problem is with video, audio, subtitles, or something else, and any troubleshooting you’ve already tried.
 
 ## Having a more serious problem? 
-I've put a lot of effort into making the experience as polished and automated as possible. However, problems may pop up from time to time. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or a 404 error on Jellyseerr), check the [Hyperdrive Status dashboard](https://status.cartersanderson.com) to see if there's an outage. If the dashboard reports an issue, I'm likely already aware of the problem and working on a fix. If everything looks good on the dashbaord, feel free to shoot me a text.
+I’ve worked hard to make Hyperdrive as smooth and automated as possible, but problems can still pop up. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or a 404 error on Jellyseerr), check the [Hyperdrive Status dashboard](https://status.cartersanderson.com) first. If the dashboard reports an outage, I’m likely already aware and working on it. If everything looks normal on the dashboard but you still can’t stream, feel free to text me with a quick note about what you’re seeing.
 
 ![status_dashoard.png](/images/status_dashboard.png)
 
 <!-- ![unavailable.png](/images/unavailable.png) -->
 
 ## Other fun stuff
-I take pride in hosting an aesthetically pleasing and well-organized server. One of my favorite parts is the `Collections` tab within the `Movies` library. Not only are movies organized by franchise (like *Shrek* or *The Godfather*), there are also collections for studios, directors, Oscars, and IMDb lists, and more. If you don't know what you want to watch, the Collections tab is a great place to start. 
+I take pride in keeping Hyperdrive polished and well-organized. One of the best features is the `Collections` tab inside the `Movies` library. Here you’ll find movies grouped not just by franchise (*Shrek*, *The Godfather*), but also by studios, directors, Oscar winners, IMDb lists, and more. If you’re not sure what to watch, this is a great place to start browsing. 
 
 ![collections.png](images/collections.png)
 
 Plex also has a shuffle button! You can shuffle TV shows, collections, or if you're feeling brave, you can even shuffle the entire library. 
 
 ## FAQs
-- I keep seeing the word "Hyperdrive." What's that? 
-    > I love _Star Wars_, and I love a naming convention. All of my devices  are named after people, places, and things from the _Star Wars_ universe. Hyperdrive is the name of the Mac mini running Plex Server, so you might see that name from time to time.
-- I requested a movie a while ago, but it's still not available on Plex. Why not? 
-    > For me to host it on Plex, a movie has to be available outside of theaters. If it's not available on streaming, video on-demand, or DVD/Bluray, it won't be available on Plex. Additionally, though I'll always try my best, I might not be able to source obscure or especially old media. 
-- Why don't you have any 4K or Remux content on your server? 
-    > Even if I had infinite storage space (which I don't), 4K and Remux files are such high bitrate that they're more hassle than they are worth, for both my server and your client. 
-- What resolution is the content on your server?
-    > For movies, the files are the highest quality available, up to 1080p. Since TV shows are so much longer than movies, I keep most of them at 720p to conserve storage space. 
-- Why are there more than 250 movies in the IMDb Top 250 Collection? 
+1. What’s Hyperdrive? 
+    > Hyperdrive is the name of my Mac mini that runs Plex Server. You’ll see it from time to time. All my devices are named after Star Wars references.
+2. Why isn’t a requested movie available yet? 
+    > Media can only be added once it's available outside theaters (e.g. on streaming, VOD, or Blu-ray/DVD). Very obscure or older titles may not be sourceable. 
+3. Why no 4K or Remux? 
+    > 4K and Remux files have huge bitrates that can create more problems than benefits. They strain both my server and your devices, so I stick with smaller, more reliable formats. They also take up way more space, so lower resolution means more available media. 
+4. What resolution is the content?
+    > Movies: highest available quality, up to 1080p. TV shows: usually 720p to conserve space. 
+5. Why are there more than 250 movies in the IMDb Top 250 Collection? 
     > I have multiple editions of the _Star Wars_ and _The Lord of the Rings_ trilogies, and each edition is counted as a separate movie within the collection.    
-- What hardware is your Hyperdrive running on? 
-    > ~~My Plex server is running on a late 2014 Mac mini with a 2.6 GHz Dual-Core Intel Core i5 and 8 GB 1600 MHz DDR3 memory.~~
-    
-    > Since January 2025, my Hyperdrive is an M4 Mac mini with 16GB Unified Memory. The media is stored on a series of 20TB hard drives housed in an OWC Mercury Elite Pro Quad enclosure.
+6. What hardware is your Hyperdrive running on? 
+    > Hyperdrive is an M4 Mac mini with 16 GB Unified Memory, and media is stored on 20 TB hard drives in an OWC Mercury Elite Pro Quad enclosure.
