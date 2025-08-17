@@ -1,8 +1,12 @@
 # Welcome	
-If you're reading this, it's because I've shared my Plex library with you. You might have some questions. *I recommend reading through this all first before going through the setup.*
+If you're reading this, it's because I've shared access to my Plex server with you. You might have some questions. *I recommend reading through this all first before going through the setup.*
 
 ## What is Plex?
-Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my living room. You have access to over 1,500 movies and over 10,000 TV episodes.
+Plex is a media server that I run on my own computer. Think of it as a streaming service like Netflix or Hulu, but all the content is stored on a computer in my home. You have access to over 1,500 movies and over 10,000 TV episodes.
+
+> Before moving on, I'd like to clarify some terminology:<br/>
+> When I say "**Plex**," I'm talking about the company and the official apps they provide.
+> When I say "**Hyperdrive**," I mean *my* Plex server: the library of movies and TV shows running on my computer that you’re connecting to through Plex.
 
 ![home.png](/images/home.png)
 
@@ -38,7 +42,12 @@ Once you've signed in, you'll be on the "Manage Library Access" page. You should
 ![library_access.png](/images/library_access.png)
 
 Before we go to the Home page, let's make some quick settings adjustments:
-> These changes will only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
+
+In addition to being a media server, Plex offers ad-supported movies and TV, as well as rentals. In order to minimize confusion, the first thing we should do is turn off *all* of Plex's media offerings by clicking `Online Media Sources` in the sidebar and disabling everything in the list.
+
+![online_disabled.png](/images/online_disabled.png)
+
+> The following changes only apply to Plex Web. Please make the same adjustments on every platform on which you plan to use Plex. 
 
 - Click `Quality` in the side bar, here are my recommended settings: 
 
@@ -70,24 +79,24 @@ Plex is also available on all major set-top boxes and smart TVs.
 _Settings wiki page coming soon_
 
 ## Can't Find What You Want? 
-If there's something you want to watch that isn't yet on Hyperdrive, you can request it yourself. Let's get set up with Overseerr, my automated request management platform:
+If there's something you want to watch that isn't yet on Hyperdrive, you can request it yourself. Let's get set up with Jellyseerr, my automated request management platform:
 
-1. Go to [overseerr.cartersanderson.com](https://overseerr.cartersanderson.com). 
+1. Go to [jellyseerr.cartersanderson.com](https://jellyseerr.cartersanderson.com). 
 2. Sign in with your Plex account.
 3. Search for the movie or TV show you want and select `Request`.
 4. That's it! Media is usually available within minutes of request submission.
 
-Unfortunately, Overseerr does not offer a native application. Luckily, it _is_ a PWA (**P**rogressive **W**eb **A**pp), which means it will behave just like an app if you add it to your Home Screen. From [overseerr.cartersanderson.com](https://overseerr.cartersanderson.com):
+Unfortunately, Jellyseerr does not offer a native application. Luckily, it _is_ a PWA (**P**rogressive **W**eb **A**pp), which means it will behave just like an app if you add it to your Home Screen. From [jellyseerr.cartersanderson.com](https://jellyseerr.cartersanderson.com):
 
 1. Select the share icon (a square with an arrow coming out of it) and tap `Add to Home Screen`.
-2. Open the Overseerr app icon from your Home Screen. 
+2. Open the Jellyseerr app icon from your Home Screen. 
 3. Sign into your Plex account.
 4. **(Optional)** Enable push notifications to receive an alert when requested media is available.
     > Go to `Settings` > `Notifications` > `Web Push`, and making sure all the options are enabled. Then tap `Enable web push` and then `Save Changes`. 
 
-![overseerr_homescreen.png](/images/overseerr_homescreen.png)
+![jellyseerr_homescreen.png](/images/jellyseerr_homescreen.png)
 
-Now, anytime you want to watch anything that isn't yet on my server, just open up Overseerr, search for the content you want and select `Request`! It's that easy.
+Now, anytime you want to watch anything that isn't yet on my server, just open up Jellyseerr, search for the content you want and select `Request`! It's that easy.
 
 ## Notice an issue with content? 
 If you're watching something and you notice an issue with the content, let me know! (Not directly - it's not you, but I'll probably forget about it.) You have two options:
@@ -96,14 +105,14 @@ If you're watching something and you notice an issue with the content, let me kn
 
     ![issue_plex_1](/images/issue_plex_1.png)
 
-2. **Within Overseer:** Find the item on [Overseerr](https://overseerr.cartersanderson.com) and click on the yellow `Report an Issue` button on the right side.
+2. **Within Overseer:** Find the item on [Jellyseerr](https://jellyseerr.cartersanderson.com) and click on the yellow `Report an Issue` button on the right side.
 
     ![issue_overseerr_1.png](/images/issue_overseerr_1.png)
 
     >  The more detail you can provide in your Issue Report, the better! Include timestamps, if the issue is with video, audio, subtitles, or something else, and any troubleshooting you've already completed.
 
 ## Having a more serious problem? 
-I've put a lot of effort into making the experience as polished and automated as possible. However, problems may pop up from time to time. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or a 404 error on Overseerr), shoot me a text and I'll do my best to fix the issue. 
+I've put a lot of effort into making the experience as polished and automated as possible. However, problems may pop up from time to time. If you run into an issue that completely prevents you from streaming (such as "Hyperdrive is currently unavailable" or a 404 error on Jellyseerr), shoot me a text and I'll do my best to fix the issue. 
 
 ![unavailable.png](/images/unavailable.png)
 

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hyperdrive — Plex Onboarding</title>
+  <meta name="description" content="A simple, beautiful onboarding page for new users on the Hyperdrive Plex server." />
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --panel: #111827;
+      --panel-2: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #F2C14E; /* Hyperdrive gold */
+      --accent-2: #DBA33A;
+      --ring: rgba(242, 193, 78, .35);
+      --shadow: 0 10px 25px rgba(0,0,0,.35);
+      --radius: 16px;
+      --maxw: 1100px;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f7fb;
+        --panel: #ffffff;
+        --panel-2: #f3f3f7;
+        --text: #0f172a;
+        --muted: #475569;
+        --shadow: 0 10px 25px rgba(0,0,0,.08);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1000px 600px at 10% -10%, rgba(242, 193, 78, .12), transparent 60%),
+                  radial-gradient(900px 600px at 110% 20%, rgba(219, 163, 58, .12), transparent 60%),
+                  var(--bg);
+    }
+
+    .wrap { max-width: var(--maxw); margin: 48px auto 96px; padding: 0 20px; }
+
+    header {
+      display: grid;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 10px; border-radius: 999px; background: linear-gradient(90deg, var(--accent-2), var(--accent));
+      color: #111; font-weight: 700; letter-spacing: .2px; box-shadow: var(--shadow);
+      width: max-content;
+    }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); letter-spacing: .3px; }
+    p.lead { margin: 0; color: var(--muted); font-size: clamp(15px, 2vw, 18px); }
+
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      padding: 10px 14px; border-radius: 12px; background: var(--panel);
+      border: 1px solid rgba(255,255,255,.06);
+      color: var(--text); text-decoration: none; font-weight: 600;
+      box-shadow: var(--shadow);
+    }
+    .btn:hover { outline: 2px solid var(--ring); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    details.card {
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: clip;
+      position: relative;
+      transition: transform .12s ease;
+    }
+    details.card:has(> summary:focus-visible) { outline: 2px solid var(--ring); }
+    details.card:hover { transform: translateY(-1px); }
+
+    summary {
+      list-style: none; cursor: pointer; user-select: none; display: flex; align-items: center; justify-content: space-between;
+      gap: 16px; padding: 18px 18px; font-weight: 700; letter-spacing: .2px;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    .chev { width: 20px; height: 20px; flex: 0 0 20px; opacity: .7; transition: transform .2s ease; }
+    details[open] .chev { transform: rotate(180deg); opacity: 1; }
+
+    .content { padding: 0 18px 18px; color: var(--muted); }
+    .content p { margin: 0 0 12px; }
+    .content ul, .content ol { margin: 0 0 12px 18px; }
+    .content code { background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 6px; }
+
+    footer { margin-top: 36px; color: var(--muted); font-size: 14px; text-align: center; }
+
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: .95em; background: rgba(255,255,255,.06); padding: 2px 6px; border-radius: 6px; }
+
+    .pill-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill-links a { text-decoration: none; color: #111; font-weight: 700; background: linear-gradient(90deg, var(--accent-2), var(--accent)); padding: 8px 12px; border-radius: 999px; }
+
+    /* Expand/Collapse Controls */
+    .toolbar { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+    .ghost {
+      padding: 8px 12px; border-radius: 10px; background: transparent; border: 1px dashed rgba(255,255,255,.25); color: var(--text); cursor: pointer; font-weight: 600;
+    }
+    .ghost:hover { border-color: var(--accent); }
+
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">HYPERDRIVE • PLEX ONBOARDING</span>
+      <h1>Welcome aboard <span style="color:var(--accent)">Hyperdrive</span></h1>
+      <p class="lead">Short, skimmable cards. Click any card for the details. Assume you’re tech‑savvy, but new to Plex.</p>
+      <div class="actions">
+        <a class="btn" href="https://app.plex.tv" target="_blank" rel="noopener">Open Plex Web</a>
+        <a class="btn" href="https://www.plex.tv/apps/" target="_blank" rel="noopener">Get Plex Apps</a>
+        <a class="btn" href="https://jellyseerr.cartersanderson.com" target="_blank" rel="noopener">Request in Jellyseerr</a>
+      </div>
+      <div class="toolbar">
+        <button class="ghost" id="expandAll">Expand all</button>
+        <button class="ghost" id="collapseAll">Collapse all</button>
+      </div>
+    </header>
+
+    <section class="grid">
+      <details class="card">
+        <summary>
+          What is Plex?
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Plex is a media server + apps. Hyperdrive hosts the library; your devices stream from it. Think “your own Netflix,” except the catalog is community‑curated and requests are handled through Jellyseerr.</p>
+          <p>You’ll sign into Plex once, then switch to the <b>Hyperdrive</b> server inside the app.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Quick start
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <ol>
+            <li>Create/Sign in to a free Plex account at <a href="https://app.plex.tv" target="_blank" rel="noopener">app.plex.tv</a>.</li>
+            <li>Install Plex apps on your devices (<a href="https://www.plex.tv/apps/" target="_blank" rel="noopener">download links</a>).</li>
+            <li>In the app, switch to the <b>Hyperdrive</b> server. If you can’t see it, ask for access.</li>
+            <li>Set streaming quality (below) so things play smoothly when you’re away from home.</li>
+            <li>Request movies/series via <a href="https://jellyseerr.cartersanderson.com" target="_blank" rel="noopener">Jellyseerr</a>. Done.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Requesting content (Jellyseerr)
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Go to <a href="https://jellyseerr.cartersanderson.com" target="_blank" rel="noopener">jellyseerr.cartersanderson.com</a> and <b>Sign in with Plex</b>. Search for a title → click <b>Request</b>. I prioritize <b>1080p movies</b> and <b>720p/1080p TV</b> for reliable remote playback. 4K is case‑by‑case.</p>
+          <p>New items appear in Plex automatically once they’re fetched, verified, and indexed. If something seems stuck, ping support (card below) with the title.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Get the apps you’ll actually use
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <div class="pill-links">
+            <a href="https://apps.apple.com/app/plex/id383457673" target="_blank" rel="noopener">iPhone / iPad</a>
+            <a href="https://play.google.com/store/apps/details?id=com.plexapp.android" target="_blank" rel="noopener">Android</a>
+            <a href="https://apps.apple.com/app/plex/id1620397189" target="_blank" rel="noopener">Apple TV</a>
+            <a href="https://play.google.com/store/apps/details?id=com.plexapp.android" target="_blank" rel="noopener">Android TV</a>
+            <a href="https://www.plex.tv/apps/" target="_blank" rel="noopener">More platforms</a>
+          </div>
+          <p>Web app is at <a href="https://app.plex.tv" target="_blank" rel="noopener">app.plex.tv</a>.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Recommended streaming quality
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <ul>
+            <li><b>Wi‑Fi (Home/Good Internet):</b> 1080p @ 8–10 Mbps</li>
+            <li><b>Cellular / Flaky Wi‑Fi:</b> 720p @ 4–6 Mbps</li>
+            <li><b>Allow Direct Play / Direct Stream:</b> On (if your device supports the format)</li>
+          </ul>
+          <p>In the player, avoid “Original” for remote sessions—pick a fixed bitrate. If you see buffering, drop one step. Quality > bragging rights.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Subtitles & audio
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Set your default in the app: <b>Subtitles → Only Forced</b> (or your language). Prefer <b>SRT</b> where available. Report out‑of‑sync or wrong subs and I’ll swap them.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          4K & HDR expectations
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Remote 4K (especially HDR + TrueHD/Atmos) can be rough. Use a capable device on strong Wi‑Fi, or request a 1080p version for smooth remote streaming. Local network playback is best for full‑fat 4K.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Troubleshooting in 60 seconds
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <ol>
+            <li>Lower Remote Quality one step (e.g., 10 → 6 Mbps).</li>
+            <li>Switch networks (cellular ↔︎ Wi‑Fi) or move closer to the router.</li>
+            <li>Force‑quit and relaunch the Plex app.</li>
+            <li>Try another title. If only one fails, report that specific item.</li>
+            <li>Still broken? See <b>Support</b> with device, app version, network, and time.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Etiquette & limits
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <ul>
+            <li>No account sharing. Ask if a household member needs access.</li>
+            <li>Request in reasonable batches. Don’t carpet‑bomb 50 titles at once.</li>
+            <li>Downloads for travel are fine; don’t try to mirror the whole library offline.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          How requests get fulfilled
+          <svg class="chev" viewBox="0 0 24 24  " fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Jellyseerr → Radarr/Sonarr → verified sources → renamed/organized → Plex library. New items show up under <b>Recently Added</b>. If a request lingers more than expected, it’s usually waiting on a good source or finishing processing.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Privacy
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Playback data (what/when/bitrate) is used only to keep the system healthy and fix issues. If you want your activity hidden from shared dashboards, ask and I’ll adjust your visibility.</p>
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          Support
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </summary>
+        <div class="content">
+          <p>Fastest route: open a ticket/message with the title, your device, app version, network (Wi‑Fi/cellular), and approximate time of the issue.</p>
+          <ul>
+            <li>Email: <a href="#" onclick="return false;">your@email</a> (replace with yours)</li>
+            <li>Discord/Chat: <a href="#" onclick="return false;">#hyperdrive‑support</a> (optional)</li>
+          </ul>
+        </div>
+      </details>
+
+    </section>
+
+    <footer>
+      <p>Hyperdrive · A private Plex server for friends & family. You’re here because you were invited.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Expand/Collapse all controls
+    const expandBtn = document.getElementById('expandAll');
+    const collapseBtn = document.getElementById('collapseAll');
+    const cards = () => Array.from(document.querySelectorAll('details.card'));
+    expandBtn.addEventListener('click', () => cards().forEach(d => d.open = true));
+    collapseBtn.addEventListener('click', () => cards().forEach(d => d.open = false));
+
+    // Allow clicking anywhere on the card header to toggle
+    document.querySelectorAll('details.card > summary').forEach(sum => {
+      sum.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          sum.parentElement.open = !sum.parentElement.open;
+        }
+      });
+      sum.setAttribute('tabindex', '0');
+      sum.setAttribute('role', 'button');
+      sum.setAttribute('aria-expanded', sum.parentElement.open ? 'true' : 'false');
+      sum.parentElement.addEventListener('toggle', () => {
+        sum.setAttribute('aria-expanded', sum.parentElement.open ? 'true' : 'false');
+      });
+    });
+  </script>
+</body>
+</html>

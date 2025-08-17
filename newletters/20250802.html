@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      /*max-width: 600px;*/
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(90deg, #DBA33A, #F2C14E); /* Add a gradient effect */
+      color: #282A2D;
+      padding: 20px 10px; /* Adjust padding for better spacing */
+      text-align: center;
+      border-bottom: 4px solid #F2C14E; /* Add a bold decorative line */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px; /* Increase font size for more emphasis */
+      font-weight: bold; /* Make the title stand out */
+      letter-spacing: 1px; /* Add slight letter spacing */
+    }
+    .header h2 {
+      font-size: 14px; /* Slightly increase subtitle size */
+      color: #ffffff; /* Keep contrast for subtitle text */
+      margin-top: 5px; /* Add space between the title and subtitle */
+    }
+    .content h3 {
+      font-size: 18px;           /* comfortable heading size */
+      color: #282A2D;            /* your dark header colour */
+      margin: 24px 0 12px;       /* space above and below */
+      font-weight: 600;          /* semi-bold to stand out */
+      border-bottom: 1px solid #DDD;  /* subtle separator */
+      padding-bottom: 4px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #333;
+    }
+    .content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .content li {
+      font-size: 16px; /* Match the font size of <p> */
+      color: #666; /* Match the text color of <p> */
+      line-height: 1.5; /* Match the line spacing of <p> */
+      margin-bottom: 10px; /* Optional: Add spacing between list items */
+    }
+    /* Added blockquote styling */
+    blockquote {
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-left: 4px solid #DBA33A;
+      background-color: #f9f9f9;
+      color: #666;
+      border-radius: 8px;
+    }
+    .inline-image {
+      display: block !important;
+      margin: 20px auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .inline-image.plain {
+      border:none !important;
+      border-radius:0 !important;
+      box-shadow:none !important;
+    }
+    sup {
+      text-decoration: none;          /* kill underline */
+      font-size: 0.5em;              /* smaller than body text */
+      vertical-align: super;
+      color: inherit;                 /* keep body colour */
+    }
+    .footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+    .footnotes {
+      margin-top: 2rem;
+      padding-left: 1.25rem;
+      font-size: 0.9em;
+      line-height: 1.4;
+      border-top: 1px solid #ddd;     /* separator line like print books */
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Hyperdrive Newsletter</h1>
+      <h2>Recent Updates to Your Favorite Plex Server</h2>
+    </div>
+    <div class="content">
+      <p>Hi everyone!</p>
+
+      <p>Another month, another newsletter! This one should be short — I’ve added an additional tool and have a tip to make your streaming lives a bit easier.</p>
+
+      <h3>New Uptime Dashboard</h3>
+
+      <p>If you experience any issues with Plex or Jellyseerr, take a quick peek at the new <a href="https://status.cartersanderson.com">Hyperdrive Status Dashboard</a>. It shows real-time statuses for Hyperdrive (Server), Hyperdrive (Remote Access), and Jellyseerr, so you can identify if the issue you’re experiencing is impacting everyone or just you. It also alerts me if anything goes down, so I don't have to wait for one of y'all to tell me there's a problem.</p>
+
+      <img src="https://i.imgur.com/PzBsSE8.png" alt="" class="inline-image">
+
+      <h3>Changing Audio &amp; Subtitle Defaults</h3>
+
+      <p>Some releases have multiple audio tracks (different languages, commentary, etc). By default, Plex will always play the <em>first</em> track, which isn’t always English. Luckily, there’s a setting that allows you to choose your preferred audio (and subtitle) language, so it’ll always play in English, even if it’s not the first audio track.</p>
+
+      <ol>
+        <li>On Plex Web, go to <a href="https://app.plex.tv/desktop/#!/settings/account">Settings &gt; Account</a></li>
+        <li>Scroll down to Audio &amp; Subtitle Settings</li>
+        <li>Choose your preference for preferred audio language, subtitle language, and additional subtitle settings (if you like)</li>
+      </ol>
+
+      <img src="https://i.imgur.com/R0yrU1T.png" alt="" class="inline-image">
+
+      <h3>Popular Media This Month</h3>
+
+      <p>Here’s what everyone’s been streaming lately:</p>
+      <img src="https://i.imgur.com/DcTt7KC.png" alt="" class="inline-image plain">
+      <p><b>Movies:</b> <em>How to Train Your Dragon</em>, <em>Sinners</em>, and <em>Lilo &amp; Stitch</em></p>
+      <img src="https://i.imgur.com/GHxEPsx.png" alt="" class="inline-image plain">
+      <p><b>TV Shows:</b> <em>Love Island (USA)</em>, <em>South Park</em>, and <em>The Sandman</em></p>
+
+      <h3>Supporting Hyperdrive</h3>
+
+      <p>Hyperdrive thrives thanks to this incredible community. If you’re enjoying the service and feel inclined to help offset the costs of storage and upgrades, you can support the project via <a href="https://coff.ee/hyperrdrive">BuyMeACoffee</a>. I’ve set up both one-time tips and recurring support tiers so you can chip in at whatever level feels right for you.</p> 
+
+      <blockquote><p>I should note that supporting Hyperdrive does not grant <em>any</em> additional benefit or access to content; that would violate Plex's Terms of Service. It's just a thank-you!<p></blockquote>
+
+
+      <p>As always, thanks for being part of this community. Your enthusiasm and feedback keep me going.</p>
+
+      <p>Happy streaming!</p>
+      <p>— Carter</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Hyperdrive. All rights reserved.</p>
+      <p><a href="https://app.plex.tv">Visit Hyperdrive on Plex</a>, <a href="https://jellyseerr.cartersanderson.com">request a movie or TV show</a>, or <a href="https://github.com/MaybeCarter/plex-wiki">check out the wiki!</a></p>
+    </div>
+  </div>
+</body>
+</html>

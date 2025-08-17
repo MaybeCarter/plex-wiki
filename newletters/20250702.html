@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(90deg, #DBA33A, #F2C14E); /* Add a gradient effect */
+      color: #282A2D;
+      padding: 20px 10px; /* Adjust padding for better spacing */
+      text-align: center;
+      border-bottom: 4px solid #F2C14E; /* Add a bold decorative line */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px; /* Increase font size for more emphasis */
+      font-weight: bold; /* Make the title stand out */
+      letter-spacing: 1px; /* Add slight letter spacing */
+    }
+    .header h2 {
+      font-size: 14px; /* Slightly increase subtitle size */
+      color: #ffffff; /* Keep contrast for subtitle text */
+      margin-top: 5px; /* Add space between the title and subtitle */
+    }
+    .content h3 {
+      font-size: 18px;           /* comfortable heading size */
+      color: #282A2D;            /* your dark header colour */
+      margin: 24px 0 12px;       /* space above and below */
+      font-weight: 600;          /* semi-bold to stand out */
+      border-bottom: 1px solid #DDD;  /* subtle separator */
+      padding-bottom: 4px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #333;
+    }
+    .content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .content li {
+      font-size: 16px; /* Match the font size of <p> */
+      color: #666; /* Match the text color of <p> */
+      line-height: 1.5; /* Match the line spacing of <p> */
+      margin-bottom: 10px; /* Optional: Add spacing between list items */
+    }
+    /* Added blockquote styling */
+    blockquote {
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-left: 4px solid #DBA33A;
+      background-color: #f9f9f9;
+      font-style: italic;
+      color: #666;
+      border-radius: 8px;
+    }
+    .inline-image {
+      display: block !important;
+      margin: 20px auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    sup {
+      text-decoration: none;          /* kill underline */
+      font-size: 0.5em;              /* smaller than body text */
+      vertical-align: super;
+      color: inherit;                 /* keep body colour */
+    }
+    .footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+    .footnotes {
+      margin-top: 2rem;
+      padding-left: 1.25rem;
+      font-size: 0.9em;
+      line-height: 1.4;
+      border-top: 1px solid #ddd;     /* separator line like print books */
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Hyperdrive Newsletter</h1>
+      <h2>Recent Updates to Your Favorite Plex Server</h2>
+    </div>
+    <div class="content">
+      <p>Hello all!</p>
+
+      <p>Things have been mostly<sup>1</sup> smooth sailing since my last email!</p>
+      <br>
+      <hr>
+      <br>
+      <p>By itself, that would be a pretty boring update. However, I recently realized that it’s been a little over a year since I started expanding Hyperdrive to users outside my home. As is my wont, I did some data analysis as a little treat to myself. That’s how everybody celebrates, right?</p>
+
+      <p>Plex and <s>Overseerr</s> Jellyseerr both keep data in a SQLite database, so I ran some queries<sup>2</sup> and pulled out some statistics about the past year-ish that we can all enjoy together.</p>
+
+      <h3>Total Play-Time vs. User Count</h3>
+
+      <img src="https://i.imgur.com/BDeD3jH.png" alt="A line and area chart showing cumulative streaming time in days (yellow line) and total number of users (blue area) from December 2023 to July 2025. The number of users grows in steps from 1 to 33, while total streaming time rises steadily and accelerates, reaching over 150 days by July 2025. The chart demonstrates both user growth and increasing engagement over time." class="inline-image">
+
+      <p>Since launch we’ve streamed the equivalent of <strong>≈150 days of media</strong>, and the curve is not only increasing, it’s accelerating. Even during stretches when I added no new users, the slope kept steepening, which means the existing crowd is watching more per household. Every new person who joins quickly boosts the curve. We added roughly one “watch-day” every eight days last spring; now it’s one every 1.7 days.</p>
+
+      <h3>Heatmap of Playback (Time of Day × Day of Week)</h3>
+
+      <img src="https://i.imgur.com/0GqKQkZ.png" alt="A color-coded table (heat map) showing Plex play counts by hour and day of the week, with the highest activity in green and the lowest in red. Peak streaming occurs between 8:00 PM and 11:00 PM, especially on Sundays and Fridays, while very early morning hours (3:00 AM to 7:00 AM) have the least activity. Total play counts for each day are highest on Saturday and Sunday." class="inline-image">
+
+      <p>A heatmap of 5,496 play events shows that Hyperdrive’s rush hour is <strong>8:00 PM to 11:00 PM</strong>. Not surprising, but fun to visualize. Weekdays <strong>3:00 AM to 7:00 AM</strong> remain almost unused, which is good to know if I need a maintenance window.</p>
+
+     <h3>TV vs Movie Share (by Duration)</h3>
+
+     <img src="https://i.imgur.com/Rn0sPJ9.png" alt="A pie chart showing the breakdown of Plex viewing by content type, with TV shows making up 60% of total viewing and movies making up 39%. TV viewing is represented by a large yellow section, while movies are shown in blue." class="inline-image">
+
+      <p>Measured by minutes, <strong>60%</strong> of all viewing time goes to episodic TV and <strong>39%</strong> goes to movies. The remaining <strong>1%</strong> belongs to a small library of high-quality music that I keep for myself.</p>
+
+      <h3>Transcode Decision by Device</h3>
+      <p>Before the chart, a brief explanation: <strong>Transcoding</strong> is Hyperdrive’s real-time process of converting a video or audio stream into a format that the client (Apple TV, Roku, iOS, etc.) can play when it can’t handle the original file directly. At the time of playback, one of three <strong>transcode decisions</strong> can be made:</p>
+
+      <ul>
+      <li><strong>Direct Play</strong> means that the file is already in a format your device understands (video codec, audio codec, resolution). Hyperdrive just sends the bits as-is. Fastest, zero hardware effort, best quality.</li>
+      <li><strong>Direct Stream</strong> means that the client can handle video track but something small (usually container or subtitle track) isn’t. Hyperdrive remuxes on-the-fly — swaps the wrapper or burns-in the subtitles — while leaving the video untouched. Light hardware use; quality unchanged.</li>
+      <li><strong>Transcode</strong> means that the client can’t handle the original video or audio codec (or the bitrate or resolution is too high). Hyperdrive converts the stream into a compatible format in real time: shrinks resolution, re-encodes audio, etc. Highest hardware load; slight quality drop but ensures playback on any screen.</li>
+      </ul>
+
+      <img src="https://i.imgur.com/bE6zoLS.png" alt="A stacked bar chart comparing streaming methods by device, with each bar showing the proportion of Direct Play (green), Direct Stream (yellow), and Transcode (red) sessions. Apple TV, iOS, Xbox, macOS, and Windows mostly use Direct Play, while Roku, Safari, Chrome, and some smart TVs show high rates of Transcode sessions." class="inline-image">
+
+      <p><strong>Apple TV and iOS</strong> make up 75% of all streams (by play count), which is good news, because they only transcode 8% of the time. <strong>Roku</strong>, on the other hand, <strong>transcodes 83% of its sessions</strong>. Lastly, HTML5 players have stricter codec requirements, so <strong>web browsers end up transcoding 88% of their sessions</strong>. The numbers don’t lie: if you’re gonna stream from Hyperdrive, you’ll have the best experience doing so from an app, not a browser.</p>
+
+      <h3>Cumulative Jellyseerr Requests</h3>
+
+      <img src="https://i.imgur.com/WtAmNZp.png" alt="A line chart showing the cumulative number of Jellyseerr requests from March 2024 to late June 2025, with the total rising steadily from zero to over 1,100 requests. The curve features several noticeable jumps, indicating days with large batches of requests, and shows an overall accelerating growth trend." class="inline-image">
+
+      <p>We’re averaging <strong>4.8 requests per day right now</strong>, compared to just <strong>1.2 a year ago</strong>. Every month this year has set a new record number of requests: from 47 in January to 137 in June. <strong>We hit 1,000 Jellyseerr requests</strong> on June 18th. Before charting the data, I naively assumed that cumulative request growth was linear, and we’d hit 2,000 after another year or so. This is not the case. Based on current trends, we’re actually due to hit 2,000 requests as soon as December 19th of this year.</p>
+
+      <img src="https://i.imgur.com/bdkadU7.jpeg" alt="A handwritten page showing the step-by-step calculation for predicting when the cumulative number of requests will reach 2,000, using a rate formula r(t) = 4.8 + 0.0069t. It includes the integration setup, resulting quadratic equation, application of the quadratic formula, and the final answer: t = 183.8 days. The solution is presented clearly in mathematical notation, illustrating each step from the original rate function to the computed number of days." class="inline-image">
+
+      <p>Thanks to everyone for providing me with a hobby, and a <em>special</em> thank you to anyone who has reported any issues with content. If the data above proves anything, it’s that I can’t QA every piece of media that comes in.</p>
+
+      <p>Happy streaming!</p>
+
+      <p>— Carter</p>
+
+      <ol class="footnotes">
+        <li>
+          The only pain point over the last month is that Xfinity continues to insist on turning off Universal Plug and Play every so often, which is absolutely infuriating to me (when I choose a setting, it should <em>never</em> change back without my direct input). If you’ve experienced a connection failure over the last month, that’s likely the culprit. However, I think I’ve finally figured out how to toggle UPnP even when I’m away from home, so downtime should be minimal going forward.
+        </li>
+        <li>
+          I ran a lot more than "some" queries, but I wanted to keep it short enough for one newsletter, while leaving some potential ideas for next month. I’ve got some user-level stats I can share, but only if folks are okay with seeing their names and viewing habits in the newsletter (nothing too personal, I swear). If you’re good with that (or not!), let me know so I can start putting together the next newsletter.
+      </ol>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Hyperdrive. All rights reserved.</p>
+      <p><a href="https://app.plex.tv">Visit Hyperdrive on Plex</a>, <a href="https://jellyseerr.cartersanderson.com">request a movie or TV show</a>, or <a href="https://github.com/MaybeCarter/plex-wiki">check out the wiki!</a></p>
+    </div>
+  </div>
+</body>
+</html>

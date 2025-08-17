@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(90deg, #DBA33A, #F2C14E); /* Add a gradient effect */
+      color: #282A2D;
+      padding: 20px 10px; /* Adjust padding for better spacing */
+      text-align: center;
+      border-bottom: 4px solid #F2C14E; /* Add a bold decorative line */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px; /* Increase font size for more emphasis */
+      font-weight: bold; /* Make the title stand out */
+      letter-spacing: 1px; /* Add slight letter spacing */
+    }
+    .header h2 {
+      font-size: 14px; /* Slightly increase subtitle size */
+      color: #ffffff; /* Keep contrast for subtitle text */
+      margin-top: 5px; /* Add space between the title and subtitle */
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #333;
+    }
+    .content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .content li {
+      font-size: 16px; /* Match the font size of <p> */
+      color: #666; /* Match the text color of <p> */
+      line-height: 1.5; /* Match the line spacing of <p> */
+      margin-bottom: 10px; /* Optional: Add spacing between list items */
+    }
+    /* Added blockquote styling */
+    blockquote {
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-left: 4px solid #DBA33A;
+      background-color: #f9f9f9;
+      font-style: italic;
+      color: #666;
+      border-radius: 8px;
+    }
+    .footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Hyperdrive Newsletter</h1>
+      <h2>Recent Updates to Your Favorite Plex Server</h2>
+    </div>
+    <div class="content">
+      <p>Greetings all!</p>
+
+      <p>If you've visited Overseerr since last night, you likely found yourself signed out and looking at a <strong>Jellyseerr</strong> login page where where Overseerr used to be. Don't worry! I've made a behind-the-scenes change and replaced Overseerr with <a href="https://docs.jellyseerr.dev">Jellyseerr</a>. It looks and feels nearly identical (because it's actually a fork of Overseerr), but this swap provides a platform that's more actively developed and paves the way for future enhancements, like smarter request handling and improved notifications. For context, Jellyseerr has had 14 updates in the past 365 days. Overseerr has had only <em>one</em> update in the last <em>675 days</em>.</p>
+
+      <p>The swap required a database migration, which I <em>believe</em> I performed successfully. As far as I can tell, <strong>your accounts, requests, and settings</strong> have all been migrated safely. And if you had web push notifications enabled, they should continue to work with no action required from you. However, if you run into any quirks or unexpected behavior, please reach out and let me know. And in case you run into any showstopping issues, I left Overseerr running at <a href="https://overseerr-legacy.cartersanderson.com">overseerr-legacy.cartersanderson.com</a> so you can still submit requests until I can resolve any potential bugs. If nobody experiences any issues, I'll deprecate Overseerr (the service, not the URL, you don't have to worry about updating your bookmarks) in the coming weeks.</p>
+
+      <h2>Optional Cleanup (Purely Cosmetic)</h2>
+
+      <p>Again, everything should continue to work exactly the same without you lifting a finger. However, if you're a purist (like me), you can delete the Overseerr app from your Home Screen and add the Jellyseerr app in its place:</p>
+
+      <ol>
+      <li>Go to <a href="https://jellyseerr.cartersanderson.com">jellyseerr.cartersanderson.com</a> in Safari.</li>
+      <li>Tap the "Share" icon</li>
+      <li>Tap "Add to Home Screen"</li>
+      <li>Ensure that web push notifications are enabled and working</li>
+      </ol>
+
+      <p>It bears repeating that <b>this is purely cosmetic and will have no effect on your usage or the behavior of the app</b>. The only real benefit here is a new (cute!) app icon for Jellyseerr. I don't <em>think</em> the Overseerr icon will change on its own despite the update.</p>
+
+      <p>Anyway, this email is already too long for a change that has virtually no impact on your experience. As always, thanks for putting up with my constant tinkering.</p>
+
+      <p>Happy streaming!</p>
+
+      <p>— Carter</p>
+      <hr>
+      <p><strong>P.S.</strong> I made a Discord server for Hyperdrive users. I don't know anything about Discord, let alone how to run one, so it's a bit of a mess right now. That's why this is in the P.S. instead of being proudly announced in the main email. I envision it becoming a community where Hyperdrive users can chat about the media they're watching, and allow a more bidirectional announcement method than these occasional email blasts. If you'd like to join, you can do so <a href="https://discord.gg/gRxrEtBEnY">here</a>. All I ask for is civility, patience, and suggestions on how it can be improved.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Hyperdrive. All rights reserved.</p>
+      <p><a href="https://app.plex.tv">Visit Hyperdrive on Plex</a>, <a href="https://jellyseerr.cartersanderson.com">request a movie or TV show</a>, or <a href="https://github.com/MaybeCarter/plex-wiki">check out the wiki!</a></p>
+    </div>
+  </div>
+</body>
+</html>
