@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      /*max-width: 600px;*/
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(90deg, #DBA33A, #F2C14E); /* Add a gradient effect */
+      color: #282A2D;
+      padding: 20px 10px; /* Adjust padding for better spacing */
+      text-align: center;
+      border-bottom: 4px solid #F2C14E; /* Add a bold decorative line */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px; /* Increase font size for more emphasis */
+      font-weight: bold; /* Make the title stand out */
+      letter-spacing: 1px; /* Add slight letter spacing */
+    }
+    .header h2 {
+      font-size: 14px; /* Slightly increase subtitle size */
+      color: #ffffff; /* Keep contrast for subtitle text */
+      margin-top: 5px; /* Add space between the title and subtitle */
+    }
+    .content h3 {
+      font-size: 18px;           /* comfortable heading size */
+      color: #282A2D;            /* your dark header colour */
+      margin: 24px 0 12px;       /* space above and below */
+      font-weight: 600;          /* semi-bold to stand out */
+      border-bottom: 1px solid #DDD;  /* subtle separator */
+      padding-bottom: 4px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #333;
+    }
+    .content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .content li {
+      font-size: 16px; /* Match the font size of <p> */
+      color: #666; /* Match the text color of <p> */
+      line-height: 1.5; /* Match the line spacing of <p> */
+      margin-bottom: 10px; /* Optional: Add spacing between list items */
+    }
+    /* Added blockquote styling */
+    blockquote {
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-left: 4px solid #DBA33A;
+      background-color: #f9f9f9;
+      color: #666;
+      border-radius: 8px;
+    }
+    .inline-image {
+      display: block !important;
+      margin: 20px auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .inline-image.plain {
+      border:none !important;
+      border-radius:0 !important;
+      box-shadow:none !important;
+    }
+    sup {
+      text-decoration: none;          /* kill underline */
+      font-size: 0.5em;              /* smaller than body text */
+      vertical-align: super;
+      color: inherit;                 /* keep body colour */
+    }
+    .footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+    .footnotes {
+      margin-top: 2rem;
+      padding-left: 1.25rem;
+      font-size: 0.9em;
+      line-height: 1.4;
+      border-top: 1px solid #ddd;     /* separator line like print books */
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Hyperdrive Newsletter</h1>
+      <h2>Recent Updates to Your Favorite Plex Server</h2>
+    </div>
+    <div class="content">
+      <p>Hi everyone!</p>
+
+      <p>I have a feeling these newsletters might become fewer and farther between. Not because I don't enjoy writing them, but because Hyperdrive has reached a point where it runs reliably without much input from me. Over the past month I've been really happy with the features I've built out, and things just haven't needed the same level of tinkering.</p>
+
+      <p>I'll continue sending updates when I roll out new features or make structural changes, but most of the systems and automations have stabilized. At this point, most of my work is quiet backend upkeep rather than big, visible updates.</p>
+
+      <p>That said, I do want to highlight the newest addition to the server: <strong>the Unwatched Requests collection</strong>. These have been live for a little while, but you may not have noticed them yet. When you open a library (either Movies or TV Shows) and switch to the <strong>Collections</strong> tab, you'll see a personalized collection at the front called <strong>{Name}'s Unwatched Requests</strong>.</p>
+
+      <p>The name is based on whatever you've set in Plex:</p>
+      <ul>
+        <li>If you have a <strong>Full Name</strong> saved in Plex settings, the collection will use that (e.g., <em>Carter Sanderson's Unwatched Requests</em>).</li>
+        <li>If you don't, it will fall back to your Plex username (e.g., <em>carters123's Unwatched Requests</em>).</li>
+      </ul>
+
+      <p>If you'd prefer the collection to display your actual name instead of your username, just go to <strong>Plex Settings → Account → Full Name</strong>, add your name, and save. The collection title won't change instantly, as these collections sync every 12 hours.</p>
+
+      <p>As you can probably guess, the Unwatched Requests collection shows everything you've requested on Jellyseerr, minus anything you've already watched. It should make it easier to find that movie you asked for a few days ago, or to resurface a show you requested a while back and never got around to watching. I've been mulling over this idea for a while, and it was fun to see it come to life.</p>
+
+      <img src="https://i.imgur.com/0SatSMH.png" class="inline-image">
+
+      <p>Speaking of Jellyseerr, the teams behind Jellyseerr and Overseerr are officially merging their projects into a new unified app called Seerr. This will bring everything under one codebase, which should mean faster development, better stability, and quicker access to new features going forward. This doesn't require any action from you! I'll handle the transition once Seerr reaches a stable release, but I wanted to give you a heads-up about some exciting changes on the horizon.</p>
+
+      <p>Finally, the most popular media from October:</p>
+
+      <img src="https://i.imgur.com/hewpWkq.png" class="inline-image plain">
+
+      <p>Movies: <em>Him</em>, <em>Vicious</em>, and <em>The Long Walk</em></p>
+
+      <img src="https://i.imgur.com/FbW9NE9.png" class="inline-image plain">
+
+      <p>TV Shows: <em>South Park</em> (again), <em>Monster</em>, and <em>IT: Welcome to Derry</em></p>
+
+      <p>Please let me know if there's anything you'd like to see from future newsletters, or any features you'd like added to Hyperdrive. As always, thanks for the support, and happy streaming!</p>
+
+      <p>— Carter </p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Hyperdrive. All rights reserved.</p>
+      <p><a href="https://app.plex.tv">Visit Hyperdrive on Plex</a>, <a href="https://jellyseerr.cartersanderson.com">request a movie or TV show</a>, or <a href="https://github.com/MaybeCarter/plex-wiki">check out the wiki!</a></p>
+    </div>
+  </div>
+</body>
+</html>

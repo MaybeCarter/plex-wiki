@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .email-container {
+      /*max-width: 600px;*/
+      margin: 20px auto;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(90deg, #DBA33A, #F2C14E); /* Add a gradient effect */
+      color: #282A2D;
+      padding: 20px 10px; /* Adjust padding for better spacing */
+      text-align: center;
+      border-bottom: 4px solid #F2C14E; /* Add a bold decorative line */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px; /* Increase font size for more emphasis */
+      font-weight: bold; /* Make the title stand out */
+      letter-spacing: 1px; /* Add slight letter spacing */
+    }
+    .header h2 {
+      font-size: 14px; /* Slightly increase subtitle size */
+      color: #ffffff; /* Keep contrast for subtitle text */
+      margin-top: 5px; /* Add space between the title and subtitle */
+    }
+    .content h3 {
+      font-size: 18px;           /* comfortable heading size */
+      color: #282A2D;            /* your dark header colour */
+      margin: 24px 0 12px;       /* space above and below */
+      font-weight: 600;          /* semi-bold to stand out */
+      border-bottom: 1px solid #DDD;  /* subtle separator */
+      padding-bottom: 4px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #333;
+    }
+    .content p {
+      font-size: 16px;
+      color: #666;
+      line-height: 1.5;
+    }
+    .content li {
+      font-size: 16px; /* Match the font size of <p> */
+      color: #666; /* Match the text color of <p> */
+      line-height: 1.5; /* Match the line spacing of <p> */
+      margin-bottom: 10px; /* Optional: Add spacing between list items */
+    }
+    /* Added blockquote styling */
+    blockquote {
+      margin: 20px 0;
+      padding: 10px 20px;
+      border-left: 4px solid #DBA33A;
+      background-color: #f9f9f9;
+      color: #666;
+      border-radius: 8px;
+    }
+    .inline-image {
+      display: block !important;
+      margin: 20px auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .inline-image.plain {
+      border:none !important;
+      border-radius:0 !important;
+      box-shadow:none !important;
+    }
+    sup {
+      text-decoration: none;          /* kill underline */
+      font-size: 0.5em;              /* smaller than body text */
+      vertical-align: super;
+      color: inherit;                 /* keep body colour */
+    }
+    .footer {
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+    .footnotes {
+      margin-top: 2rem;
+      padding-left: 1.25rem;
+      font-size: 0.9em;
+      line-height: 1.4;
+      border-top: 1px solid #ddd;     /* separator line like print books */
+    }
+    .footer a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Hyperdrive Newsletter</h1>
+      <h2>Recent Updates to Your Favorite Plex Server</h2>
+    </div>
+    <div class="content">
+      <p>Greetings all!</p>
+
+      <p>After about a month of experimenting with poster overlays, I’ve landed on a combination I find to be helpful but not overwhelming. A few changes to highlight since last time:</p>
+
+      <ul>
+        <li><strong>Removed Recently Added:</strong> There’s already a “Recently Added” section on both the Home page and the Recommended page of each library, making them  redundant at best and distracting at worst.</li>
+        <li><strong>Added Emmy Winners:</strong> Easily identify shows that won a Primetime Emmy Award.</li>
+        <li><strong>Added Streaming-Service Original:</strong> A small streaming service logo now shows which platform originally made or branded the title — e.g., a Netflix Original, an Apple TV+ drama, or a Prime action flick. To browse everything from a service (original or not), use Collections.</li>
+        <li><strong>Moved Trending:</strong> The addition of the streaming service banners meant that a trending streaming service original would have overlapping overlays. Centering the trending icon resolves that issue.</li>
+        <li><strong>Simplified TV Show Status:</strong> While I find it extremely useful to know at a glance if a show is current or cancelled, the previous overlays were too visually heavy for my taste. I’ve removed the words, leaving only a colored strip at the bottom of the poster: blue is airing, green is returning, grey is ended, and red is cancelled.</li>
+        <li><strong>Improved New Season:</strong> I made a new “New Season” overlay that I prefer the look of and no longer interferes with the show’s status overlay.</li>
+      </ul>
+
+      <img src="https://i.imgur.com/0SatSMH.png" class="inline-image plain">
+
+      <p>I also made a change to how posters are managed. You shouldn’t notice any difference, but it ensures that my curated posters stick around even if the video file is upgraded. Don’t worry, though: I’m still choosing posters for every title to ensure the library remains clean and consistent.</p>
+
+      <p>The most-watched titles on Hyperdrive in September were…</p>
+
+      <img src="https://i.imgur.com/BezdQIy.png" class="inline-image plain">
+
+      <p><strong>Movies:</strong> <em>Weapons</em>, <em>The Fantastic Four: First Steps</em>, and <em>Elio</em></p>
+
+      <img src="https://i.imgur.com/3u0NLsw.png" class="inline-image plain">
+
+      <p><strong>TV Shows:</strong> <em>South Park</em> (in first place for the third month in a row!), <em>The Summer I Turned Pretty</em> (for the second month in a row), and <em>Alien: Earth</em></p>
+
+      <p>That’s it for this month! Nothing huge, but some nice refinements to improve your experience and make it easier for me to manage. Oh, and keep an eye out for a spooky season collection on your Home page later this month!</p>
+
+      <p>As always, I’d love your feedback, and happy streaming!</p>
+
+      <p>— Carter </p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Hyperdrive. All rights reserved.</p>
+      <p><a href="https://app.plex.tv">Visit Hyperdrive on Plex</a>, <a href="https://jellyseerr.cartersanderson.com">request a movie or TV show</a>, or <a href="https://github.com/MaybeCarter/plex-wiki">check out the wiki!</a></p>
+    </div>
+  </div>
+</body>
+</html>
